@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:merchandiser_super_app/constant/app_color.dart';
 
+import 'merchandiser_app/controller/offers_controller.dart';
+import 'merchandiser_app/view/OFFERS/offers_screen.dart';
 import 'view/auth/login_screen.dart';
 
 void main() {
@@ -24,9 +26,9 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         home: const LoginScreen(),
-        // home: const BranchScreen(),
-        // home: const TasksScreen(),
-        // home: const AddTaskScreen(),
+
+        //// merchandiser_app
+        // home: const OffersScreen(),
       ),
     );
   }

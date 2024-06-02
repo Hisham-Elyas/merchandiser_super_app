@@ -5,10 +5,10 @@ class CustomDropdownButton extends StatelessWidget {
   final double? width;
   final double? height;
   final String? hintText;
-  final int? value;
+  final dynamic value;
   final Function()? onTap;
-  final void Function(int?) onChanged;
-  final List<DropdownMenuItem<int>>? items;
+  final void Function(dynamic) onChanged;
+  final List<DropdownMenuItem>? items;
   const CustomDropdownButton({
     super.key,
     this.width,
@@ -33,7 +33,7 @@ class CustomDropdownButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(11.r),
         elevation: 15,
         color: const Color(0xffF6F6F6),
-        child: DropdownButton(
+        child: DropdownButton<dynamic>(
           borderRadius: BorderRadius.circular(15.r),
           dropdownColor: const Color(0xffF6F6F6),
           icon: const Icon(Icons.keyboard_arrow_down, color: Color(0xff656060)),
